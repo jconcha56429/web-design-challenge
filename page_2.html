@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang = "en us">
-<html>
 <header>
 
-    <style type = "text/css">
-        .sidebar{height: 100%;
-            width: 500px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            color:black;
-            left: 0;
-            background-color:white;
-            padding-top: 20px;
-            text-align: center;}
-        .sidebar img {height:320px;
-            width:400px}
-        body {margin-left:500px}
-    </style>
+<style type = "text/css">
+    header {margin-left:500px;
+    height:400px;
+    width:600px}
+    .sidebar{height: 100%;
+        width: 500px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        color:black;
+        left: 0;
+        background-color:white;
+        padding-top: 20px;
+        text-align: center;
+        overflow-y: scroll;
+}
+    .sidebar img {height:auto;
+        width:320px}
+</style>
+<h1>Analysis of Latitude vs. Humidity</h1>
+<img src = "Resources/assets/images/Fig2.png">
+<p> This graph displays Latitude vs. Humidity. This graph isn't as easy to read as the one before it, however based
+    off if it we can make a few assumptions. Just by looking at it, there doesn't seem to be a very strong correlation
+    either way. There does seem to be a cluster of data located in the higher latitude and higher humidity, where as 
+    the lower end of these factors has less data. Still though much of the data is scattered all over this graph.
+</p>
 </header>
+
+
 <body>
-<div class = "new">
+<div class="sidebar">
+    <h1>My Data</h1>
+    <a href="page_1.html"><img src = "Resources/assets/images/Fig1.png"></a> 
+    <a href="page_2.html"><img src = "Resources/assets/images/Fig2.png">
+    <a href="page_3.html"><img src = "Resources/assets/images/Fig3.png">
+    <a href="page_4.html"><img src = "Resources/assets/images/Fig4.png">
 
-    <div class="sidebar">
-        <h1>My Data</h1>
-        <a href="page_1.html"><img src = "Resources/assets/images/Fig1.png"></a> 
-        <a href="page_2.html"><img src = "Resources/assets/images/Fig2.png">
-        <a href="page_3.html"><img src = "Resources/assets/images/Fig3.png">
-        <a href="page_4.html"><img src = "Resources/assets/images/Fig4.png">
-    
-    </div>
-    <img src =  "Resources/assets/images/Fig2.png"
+</div>
 </body>
-
-</html>
