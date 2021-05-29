@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang = "en us">
 <html>
-<style type = "text/css">
-    .butt {margin-left:200px;
-    margin-right:75px;
-    height:400px;
-    width:600px;
-    margin-bottom:10px;
+<head>
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+        </script>
+        <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+        </script><meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>
+        img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border:solid aqua 5px;
+        margin-right:auto;
+        margin-left:auto;
 }
-    .sidebar{
-        width: 200px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        color:black;
-        left: 0;
-        background-color:white;
-        padding-top: 20px;
-        text-align: center;
-        overflow-y: scroll;
-        float:left;}
-    .sidebar a{font-size:25px}
-    .test {font-size:100;
-        color:black;
-        right:0;
-        top:0;
-        position:fixed;
-        color:black;
-        height:100%;
-        padding-right: 20px;
-        width:75px;
-}
-
 </style>
+</head>
 <body>
-    <div class="butt">
-        <h1>Analysis of Latitude vs. Maximum Temperature</h1>
-        <img src = "Resources/assets/images/Fig1.png">
-        <p> This plot in particular displays the relationship between Latitude and the Max Temprature of latitudes
-        around the world. Based on our visualization we can see how the equator is a hotspot for max temperatures, 
-        no put intended. This makes sense because the sun strikes most directly on the equator when the earth is 
-        moving around the sun. Based on this you can also see how generally speaking, the further away from the 
-        equator the lower the maximum temperature.
+    
+    <nav class="navbar navbar-expand-sm bg-light">
+  
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Web Design Challenge
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="page_5.html">
+                  Comparisons
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="page_6.html">
+                  Data
+                </a>
+            </li>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="page_1.html">Plot 1</a>
+                  <a class="dropdown-item" href="page_2.html">Plot 2</a>
+                  <a class="dropdown-item" href="page_3.html">plot 3</a>
+                  <a class="dropdown-item" href="page_4.html">plot 4</a>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>This plot in particular displays the relationship between Latitude and the Max Temprature of latitudes around the world. Based on our visualization we can see how the equator is a hotspot for max temperatures, no put intended. This makes sense because the sun strikes most directly on the equator when the earth is moving around the sun. Based on this you can also see how generally speaking, the further away from the equator the lower the maximum temperature.
         </p>
     </div>
-    <div class="sidebar">
-        <a href = "index.html">Web-Design-Challenge</a>
-    </div>
-    <div class="test">
-        <a href= "page_5.html">Comparisons</h1>
+    <div class="container">
+        <img src="Resources/assets/images/Fig1.png">
     </div>
 </body>
-
-
-
 </html>

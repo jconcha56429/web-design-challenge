@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang = "en us">
-<header>
-
-<style type = "text/css">
-    header {margin-left:500px;
-    height:400px;
-    width:600px}
-    .sidebar{height: 100%;
-        width: 500px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        color:black;
-        left: 0;
-        background-color:white;
-        padding-top: 20px;
-        text-align: center;
-        overflow-y: scroll;
+<html>
+<head>
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+        </script>
+        <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+        </script><meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>
+        img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border:solid aqua 5px;
+        margin-right:auto;
+        margin-left:auto;
 }
-    .sidebar img {height:auto;
-        width:320px}
-    .sidebar a{font-size:25px}
-
 </style>
-<h1>Analysis of Latitude vs. Wind Speed</h1>
-<img src = "Resources/assets/images/Fig4.png">
-<p> This graph showing the relationship between latititude and wind speed looks as though it could potentially 
-    be a positive correlation because of the data scattered in the form of a high tail. However, just based on
-    the visual represtation of this graph it's especially hard to tell with tons of the data scattered in the 
-    bottom of the plots. 
-</p>
-</header>
-
-
+</head>
 <body>
-<div class="sidebar">
-    <a href = "index.html">Web-Design-Challenge</a>
-    <h1>My Data</h1>
-    <a href="page_1.html"><img src = "Resources/assets/images/Fig1.png"></a> 
-    <a href="page_2.html"><img src = "Resources/assets/images/Fig2.png">
-    <a href="page_3.html"><img src = "Resources/assets/images/Fig3.png">
-    <a href="page_4.html"><img src = "Resources/assets/images/Fig4.png">
+    
+    <nav class="navbar navbar-expand-sm bg-light">
+  
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Web Design Challenge
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
 
-</div>
+            <li class="nav-item">
+                <a class="nav-link" href="page_5.html">
+                  Comparisons
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="page_6.html">
+                  Data
+                </a>
+            </li>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="page_1.html">Plot 1</a>
+                  <a class="dropdown-item" href="page_2.html">Plot 2</a>
+                  <a class="dropdown-item" href="page_3.html">plot 3</a>
+                  <a class="dropdown-item" href="page_4.html">plot 4</a>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        This graph showing the relationship between latititude and wind speed looks as though it could potentially be a positive correlation because of the data scattered in the form of a high tail. However, just based on the visual represtation of this graph it's especially hard to tell with tons of the data scattered in the bottom of the plots.
+
+
+
+    </p>
+    </div>
+    <div class="container">
+        <img src="Resources/assets/images/Fig4.png">
+    </div>
 </body>
+</html>
