@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang = "en us">
-<header>
-
+<html>
 <style type = "text/css">
-    header {margin-left:500px;
+    .butt {margin-left:200px;
+    margin-right:75px;
     height:400px;
     width:600px;
-    margin-bottom:10px}
-    .sidebar{height: 100%;
-        width: 500px;
+    margin-bottom:10px;
+}
+    .sidebar{
+        width: 200px;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -18,31 +19,39 @@
         padding-top: 20px;
         text-align: center;
         overflow-y: scroll;
-}
-    .sidebar img {height:auto;
-        width:320px}
+        float:left;}
     .sidebar a{font-size:25px}
+    .test {font-size:100;
+        color:black;
+        right:0;
+        top:0;
+        position:fixed;
+        color:black;
+        height:100%;
+        padding-right: 20px;
+        width:75px;
+}
 
 </style>
-<h1>Analysis of Latitude vs. Maximum Temperature</h1>
-<img src = "Resources/assets/images/Fig1.png">
-<p> This plot in particular displays the relationship between Latitude and the Max Temprature of latitudes
-around the world. Based on our visualization we can see how the equator is a hotspot for max temperatures, 
-no put intended. This makes sense because the sun strikes most directly on the equator when the earth is 
-moving around the sun. Based on this you can also see how generally speaking, the further away from the 
-equator the lower the maximum temperature.
-</p>
-</header>
-
-
 <body>
-<div class="sidebar">
-    <a href = "index.html">Web-Design-Challenge</a>
-    <h1>My Data</h1>
-    <a href="page_1.html"><img src = "Resources/assets/images/Fig1.png"></a> 
-    <a href="page_2.html"><img src = "Resources/assets/images/Fig2.png">
-    <a href="page_3.html"><img src = "Resources/assets/images/Fig3.png">
-    <a href="page_4.html"><img src = "Resources/assets/images/Fig4.png">
-
-</div>
+    <div class="butt">
+        <h1>Analysis of Latitude vs. Maximum Temperature</h1>
+        <img src = "Resources/assets/images/Fig1.png">
+        <p> This plot in particular displays the relationship between Latitude and the Max Temprature of latitudes
+        around the world. Based on our visualization we can see how the equator is a hotspot for max temperatures, 
+        no put intended. This makes sense because the sun strikes most directly on the equator when the earth is 
+        moving around the sun. Based on this you can also see how generally speaking, the further away from the 
+        equator the lower the maximum temperature.
+        </p>
+    </div>
+    <div class="sidebar">
+        <a href = "index.html">Web-Design-Challenge</a>
+    </div>
+    <div class="test">
+        <a href= "page_5.html">Comparisons</h1>
+    </div>
 </body>
+
+
+
+</html>
